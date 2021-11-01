@@ -20,4 +20,7 @@ public abstract class Vehicle {
     public void setAantalWielen(int aantalWielen) {
         this.aantalWielen = aantalWielen;
     }
+
+    // template method
+    public abstract void drive();
 }

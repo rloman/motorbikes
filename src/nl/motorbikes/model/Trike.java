@@ -36,6 +36,12 @@ public class Trike extends Motor {
         return kettingKast;
     }
 
+    @Override
+    public void drive() {
+        super.drive();
+        System.out.println("Driving Trike");
+    }
+
     public void setKettingKast(String kettingKast) {
         this.kettingKast = kettingKast;
     }
