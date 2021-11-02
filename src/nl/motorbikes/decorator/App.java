@@ -6,5 +6,7 @@ public class App {
         Beverage beverage = new Milk(new Sugar(new Coffee()));
 
         System.out.println(beverage.cost());
+
+        System.out.println(beverage.getDescription());
     }
 }

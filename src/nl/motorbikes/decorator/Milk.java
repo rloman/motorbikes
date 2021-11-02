@@ -12,4 +12,9 @@ public class Milk extends CondimentDecorator {
     public double cost() {
         return 0.25 + this.beverage.cost();
     }
+
+    @Override
+    public String getDescription() {
+        return "Milk with "+beverage.getDescription();
+    }
 }
