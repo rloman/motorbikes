@@ -15,6 +15,6 @@ public class Sugar extends CondimentDecorator {
 
     @Override
     public String getDescription() {
-        return "Sugar with " + beverage.getDescription();
+        return beverage.getDescription() + " with Sugar";
     }
 }

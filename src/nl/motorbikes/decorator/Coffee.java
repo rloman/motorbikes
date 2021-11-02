@@ -2,13 +2,12 @@ package nl.motorbikes.decorator;
 
 public class Coffee extends Beverage {
 
-    @Override
-    public double cost() {
-        return 1.0;
+    public Coffee() {
+        this.description = "Coffee";
     }
 
     @Override
-    public String getDescription() {
-        return "Coffee";
+    public double cost() {
+        return 1.0;
     }
 }
