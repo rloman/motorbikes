@@ -17,6 +17,13 @@ public class RecList {
         }
     }
 
+    public int size() {
+        if (this.head != null) {
+            return 1 + tail.size();
+        }
+        return 0;
+    }
+
     public void print() {
         if (this.head != null) {
             System.out.print(this.head+", ");
