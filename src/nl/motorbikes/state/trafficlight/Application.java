@@ -3,7 +3,7 @@ package nl.motorbikes.state.trafficlight;
 public class Application {
 
 	public static void main(String[] args) {
-		Trafficlight light = new Trafficlight();
+		TrafficLight light = new TrafficLight();
 		
 		light.switchOrange();
 		light.switchGreen();
@@ -11,7 +11,5 @@ public class Application {
 		light.switchOrange();
 		light.switchOrange();
 		light.switchRed();
-
 	}
-
 }

@@ -2,10 +2,10 @@ package nl.motorbikes.state.trafficlight;
 
 public class GreenState implements State {
 	
-	private Trafficlight light;
+	private TrafficLight trafficLight;
 	
-	public GreenState(Trafficlight light) {
-		this.light = light;
+	public GreenState(TrafficLight trafficLight) {
+		this.trafficLight = trafficLight;
 	}
 
 	@Override
@@ -15,7 +15,7 @@ public class GreenState implements State {
 
 	@Override
 	public void switchOrange() {
-		light.setState(this.light.getOrangeState());
+		trafficLight.state = this.trafficLight.orangeState;
 		System.out.println("Light switched to orange!");
 
 	}
@@ -23,7 +23,6 @@ public class GreenState implements State {
 	@Override
 	public void switchRed() {
 		System.out.println("First switch the light to orange");
-
 	}
 
 }
