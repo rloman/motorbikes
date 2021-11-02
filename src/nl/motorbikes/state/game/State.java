@@ -1,4 +1,4 @@
-package nl.designpatterns.state.game;
+package nl.motorbikes.state.game;
 
 public interface State {
 

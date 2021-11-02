@@ -1,4 +1,4 @@
-package nl.designpatterns.state.trafficlight;
+package nl.motorbikes.state.trafficlight;
 
 public class OrangeState implements State {
 	

@@ -1,4 +1,4 @@
-package nl.designpatterns.state.gumball;
+package nl.motorbikes.state.gumball;
 
 public class GumballMachine {
 	
