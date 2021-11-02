@@ -1,4 +1,4 @@
-package nl.designpatterns.flyweight;
+package nl.motorbikes.flyweight;
 
 public class Tree {
 	

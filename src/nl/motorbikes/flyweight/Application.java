@@ -1,4 +1,4 @@
-package nl.designpatterns.flyweight;
+package nl.motorbikes.flyweight;
 
 import java.util.List;
 
