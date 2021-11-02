@@ -6,7 +6,7 @@ public class NumberHandler implements Handler {
     private int hits;
     private Handler chain;
 
-    public NumberHandler(int number) {
+    private NumberHandler(int number) {
         this.number = number;
         number++;
         if(number <10) {
@@ -23,7 +23,7 @@ public class NumberHandler implements Handler {
 
     public boolean handle(int number) {
         if(this.number == number) {
-            System.out.println("Handled a "+number+"!");
+//            System.out.println("Handled a "+number+"!");
             hits++;
 
             return true;
