@@ -6,8 +6,8 @@ public class App {
 
         PrimeNumberIterator i = new PrimeNumberIterator(100);
         for (PrimeNumberIterator it = i; it.hasNext(); ) {
-            int element = it.next();
-            System.out.println(element);
+            int prime = it.next();
+            System.out.println(prime);
         }
     }
 }
