@@ -25,4 +25,10 @@ public class GreenState implements State {
 		System.out.println("First switch the light to orange");
 	}
 
+	@Override
+	public void switchBlinking() {
+		this.trafficLight.state = this.trafficLight.blinkState;
+		System.out.println("Trafflight is blinking now!");
+	}
+
 }

@@ -10,9 +10,8 @@ public class RedState implements State {
 	
 	@Override
 	public void switchGreen() {
-		System.out.println("Light switched to green");
 		this.light.state = this.light.greenState;
-
+		System.out.println("Light switched to green. Drive!");
 	}
 
 	@Override
@@ -23,7 +22,11 @@ public class RedState implements State {
 	@Override
 	public void switchRed() {
 		System.out.println("Light is already red.");
-
 	}
 
+	@Override
+	public void switchBlinking() {
+		System.out.println("First set light to green to allow waiters to drive");
+		System.out.println("Then set light to blinking");
+	}
 }

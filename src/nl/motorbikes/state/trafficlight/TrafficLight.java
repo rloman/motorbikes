@@ -9,11 +9,13 @@ public class TrafficLight {
 	State redState;
 	State orangeState;
 	State greenState;
+	State blinkState;
 
 	public TrafficLight() {
 		redState = new RedState(this);
 		orangeState = new OrangeState(this);
 		greenState = new GreenState(this);
+		blinkState = new BlinkState(this);
 		
 		state = this.redState;
 	}
@@ -28,5 +30,8 @@ public class TrafficLight {
 
 	public void switchRed() {
 		state.switchRed();
+	}
+	public void switchBlinking() {
+		state.switchBlinking();
 	}
 }

@@ -25,4 +25,9 @@ public class OrangeState implements State {
 		this.light.state = this.light.redState;
 	}
 
+	@Override
+	public void switchBlinking() {
+		this.light.state = this.light.blinkState;
+		System.out.println("Orange Light set to blinkstate");
+	}
 }
