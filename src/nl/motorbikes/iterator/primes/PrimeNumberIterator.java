@@ -2,7 +2,7 @@ package nl.motorbikes.iterator.primes;
 
 import java.util.Iterator;
 
-public class PrimeNumberIterator implements Iterator<Integer> {
+public class PrimeNumberIterator implements Iterator<Integer>, Iterable<Integer> {
 
     /**
      * The next prime to be returned by this iterator's next method.
@@ -87,5 +87,10 @@ public class PrimeNumberIterator implements Iterator<Integer> {
     @Override
     public boolean hasNext() {
         return this.nextPrime <= this.maxPrime;
+    }
+
+    @Override
+    public Iterator<Integer> iterator() {
+       return this;
     }
 }
