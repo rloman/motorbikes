@@ -12,9 +12,12 @@ public class Application {
         basket.add(new Apple());
         basket.add(new Banana());
 
-        Visitor v = new FruitcountingVisitor();
-        basket.accept(v);
+        Visitor visitor = new FruitcountingVisitor();
+        basket.accept(visitor);
+        System.out.println(visitor.toString());
 
-        System.out.println(v.toString());
+        visitor = new FruitpriceCalculatingVisitor();
+        basket.accept(visitor);
+        System.out.println(visitor);
     }
 }
