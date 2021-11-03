@@ -13,5 +13,7 @@ public class Application {
 		control.buttonPressed();
 
 		// implement the command StartMotorCommand here
+		control.setCommand(new MotorDriveCommand());
+		control.buttonPressed();
 	}
 }
