@@ -6,4 +6,9 @@ public class Motor extends Vehicle {
     Motor() {
 
     }
+
+    @Override
+    public void drive() {
+        System.out.println("Driving motor!");
+    }
 }

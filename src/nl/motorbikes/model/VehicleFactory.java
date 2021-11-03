@@ -7,7 +7,7 @@ public final class VehicleFactory {
             return new Motor();
         }
         else {
-            return null;
+            throw new UnsupportedOperationException();
         }
     }
 }
