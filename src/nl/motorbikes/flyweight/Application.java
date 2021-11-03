@@ -1,39 +1,22 @@
 package nl.motorbikes.flyweight;
 
-import java.util.List;
-
 public class Application {
-
 	public static void main(String[] args) {
-
-		TreeManager manager = TreeManager.getInstance();
-
-		Tree t1 = new Tree(1, 1, 2);
-		Tree t2 = new Tree(2, 2, 4);
-		Tree t3 = new Tree(3, 3, 6);
-
-		manager.addTree(t1);
-		manager.addTree(t2);
-		manager.addTree(t3);
-
-		Tree out = manager.getTree(1, 1);
-
-		System.out.println(out.x);
-		System.out.println(out.y);
-		System.out.println(out.age);
-
-		 out = manager.getTree(2, 2);
-
-		System.out.println(out.x);
-		System.out.println(out.y);
-		System.out.println(out.age);
-		
-		List<Tree> trees = manager.getTrees();
-		for(Tree tree : trees) {
-			tree.show();
+		int[][] deciduousLocations = {{1, 1}, {33, 50}, {100, 90}};
+		int[][] coniferLocations = {{10, 87}, {24, 76}, {2, 64}};
+		TreeFactory treeFactory = new TreeFactory(); // creates the two flyweights
+		Tree d, c;
+		try {
+			d = treeFactory.getTree("deciduous");
+			c = treeFactory.getTree("conifer");
+			for (int[] location : deciduousLocations) {
+				d.display(location[0],  location[1]);
+			}
+			for (int[] location : coniferLocations) {
+				c.display(location[0],  location[1]);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
 		}
-		
-
 	}
-
 }
