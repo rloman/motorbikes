@@ -67,6 +67,7 @@ public class PrimeNumberIterator implements Iterator<Integer> {
      * @return the next prime number in this iteration
      */
 
+    @Override
     public Integer next() {
         int prime = nextPrime;
 
@@ -83,6 +84,7 @@ public class PrimeNumberIterator implements Iterator<Integer> {
      * @return true
      */
 
+    @Override
     public boolean hasNext() {
         return this.nextPrime <= this.maxPrime;
     }
