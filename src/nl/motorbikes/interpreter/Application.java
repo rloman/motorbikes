@@ -19,5 +19,9 @@ public class Application {
         Expression query3 = new Select("name", new From("people", new Where(name -> name.toLowerCase().startsWith("d"))));
         List<String> result3 = query3.interpret(ctx);
         System.out.println(result3);
+
+        Expression query4 = new Select("surname", new From("people", new Where(name -> name.toLowerCase().contains("doe"))));
+        List<String> result4 = query4.interpret(ctx);
+        System.out.println(result4);
     }
 }
