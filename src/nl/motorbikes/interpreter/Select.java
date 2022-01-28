@@ -15,6 +15,7 @@ class Select implements Expression {
     @Override
     public List<String> interpret(Context ctx) {
         ctx.setColumn(column);
+
         return from.interpret(ctx);
     }
 }

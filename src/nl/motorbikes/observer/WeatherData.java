@@ -6,7 +6,6 @@ public class WeatherData extends Observable {
 
 	public void update(int newTemperature) {
 		this.temperature = newTemperature;
-		this.publish(new Integer(temperature));
+		this.publish(temperature); // temperature is boxed to Integer (Object)
 	}
-
 }

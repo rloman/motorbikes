@@ -8,7 +8,7 @@ public class Application {
     public static void main(String[] args) {
 
         Expression query = new Select("name", new From("people"));
-        Context ctx = new Context();
+        final Context ctx = new Context();
         List<String> result = query.interpret(ctx);
         System.out.println(result);
 

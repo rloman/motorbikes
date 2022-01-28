@@ -19,5 +19,6 @@ public class Observable {
 	
 	public void unsubscribe(Observer obs) {
 		this.observers.remove(obs);
+		System.out.println("deleted one observer with hash => "+obs.hashCode());
 	}
 }

@@ -6,17 +6,14 @@ public class Application {
 		
 		
 		WeatherData data = new WeatherData();
-		
+
+		// Kijk, het Weatherstation is anoniem. , toch krijgt ie straks updates!
 		new WeatherStation(data);
 		WeatherStation victim = new WeatherStation(data);
 		
 		data.update(33);
 		
 		data.unsubscribe(victim);
-		System.out.println("deleted one");
-		
 		data.update(35);
-		
-		
 	}
 }
