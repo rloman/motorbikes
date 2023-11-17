@@ -7,9 +7,9 @@ public class TreeFactory {
 		this.c = new ConiferTree();
 	}
 	public Tree getTree(String type) throws Exception {
-		if (type.equals("deciduous")) {
+		if ("deciduous".equals(type)) {
 			return this.d;
-		} else if (type.equals("conifer")) {
+		} else if ("conifer".equals(type)) {
 			return this.c;
 		} else {
 			throw new Exception("Invalid kind of tree");

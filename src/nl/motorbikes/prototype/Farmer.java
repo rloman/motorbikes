@@ -6,7 +6,6 @@ public abstract class Farmer implements Cloneable {
     public String name;
     public StringBuilder builder = new StringBuilder();
 
-    // shallow
     @Override
     public Farmer clone() throws CloneNotSupportedException{
 
@@ -20,16 +19,3 @@ public abstract class Farmer implements Cloneable {
     }
 }
 
-class ConcreteFarmer1 extends Farmer {
-    @Override
-    public Farmer clone() throws CloneNotSupportedException {
-        return (ConcreteFarmer1)super.clone();
-    }
-}
-
-class ConcreteFarmer2 extends Farmer {
-    @Override
-    public Farmer clone() throws CloneNotSupportedException {
-        return (ConcreteFarmer2)super.clone();
-    }
-}
